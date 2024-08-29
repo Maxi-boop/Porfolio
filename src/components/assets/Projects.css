@@ -1,0 +1,17 @@
+.portfolioWrapper .portfolioGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    padding: 1ch;
+}
+.portfolioWrapper .portfolioText > h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.portfolioWrapper{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    overflow: hidden;
+}

@@ -1,0 +1,57 @@
+.aboutMe{
+    margin-top: 2rem;
+    display: flex;
+}
+.basicInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#mainText-aboutMe{
+    font-size: 4rem;
+    text-align: left;
+    margin: 0
+}
+#mainText-description{
+    font-size: 2rem;
+}
+#emojiWavingAnimation{
+    display: inline-block;
+    margin: 0;
+    animation: wavingHand infinite 2s;
+}
+@keyframes wavingHand{
+    0% {transform: rotateZ(0)}
+    50% {transform: rotateZ(-11.125deg)}
+    100% {transform: rotateZ(0)}
+}
+.image{
+    width: 50%;
+    background-color: black;
+    border-radius: 1rem;
+    
+}
+@media screen and (max-width: 600px){
+    .aboutMe{
+        flex-direction: column;
+    }
+    .image,.basicInfo{
+        width: 100%;
+    }
+    #mainText-aboutMe{
+        text-align: center;
+    }
+}
+.projects{
+    position: relative;
+
+
+    .blackWaveTransition svg{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+    }
+}

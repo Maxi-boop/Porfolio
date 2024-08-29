@@ -1,0 +1,92 @@
+.stackedCards ul{
+    margin: 0;
+    padding: 0;
+}
+
+.stackedCards ul li{
+    min-height: 100%;
+    width: 100%;
+    list-style-type: none;
+
+    
+    position: sticky;
+    top: 0;
+}
+.stackedCards ul li:nth-child(odd){
+    background-color: white;
+}
+.stackedCards ul li:nth-child(even){
+    background-color: #8eb1fe;
+    color: white;
+}
+.stackedCards ul li .cardContent div{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 600px){
+    .stackedCards ul li .cardContent div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #reactlogo-stackingCards{
+        visibility: hidden;
+    }
+    .stackedCards ul li .cardContent div .githubLogo svg{
+        visibility: hidden;
+    }
+
+    .stackedCards ul li .cardContent div .gitLogo svg{
+        visibility: hidden;
+    }
+
+
+}
+.stackedCards ul li .cardContent div section {
+    height: 100%;
+}
+.stackedCards ul li .cardContent div section > h1 {
+    font-size: 4rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+.stackedCards ul li .cardContent div section > p {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.stackedCards .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.stackedCards ul li .cardContent div section .buttons{
+    margin-bottom: 100%;
+}
+.stackedCards ul li .cardContent div section .buttons button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: solid black 2px;
+    transition: ease-in-out 0.25s;
+}
+.stackedCards ul li .cardContent div section .buttons button:hover {
+    box-shadow: 0 0 0.3em black;
+}
+.stackedCards ul li .cardContent div svg{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    transform: translateY(-90%);
+}
+
+
+
+#reactlogo-stackingCards{
+    animation: rotate linear 20s infinite;
+}
+
+@keyframes rotate{
+    to {transform: rotateZ(360deg);}
+}

@@ -1,0 +1,39 @@
+.alertWrapper{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+
+.alert{
+    position: relative;
+    border: 1.5px solid black;
+    color: black;
+    border-radius: 0.25rem;
+    width: 50%;
+    align-items: baseline;
+    font-size: 2rem;
+    padding: 1rem;
+    svg{
+        scale: 2;
+    }
+}
+.construction-alert{
+    background-color: orangered;
+}
+.mobile-alert, .responsive-alert{
+    background-color: rgb(255, 136, 0);
+}
+.alertWrapper .alert button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    scale: 0.5;
+    color: white;
+    background-color: black;
+    border: black solid 1rem;
+    border-radius: 3000rem;
+}

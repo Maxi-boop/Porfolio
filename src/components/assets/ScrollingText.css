@@ -1,0 +1,26 @@
+
+.scrollingText, .ulScrolling{
+    display: flex;
+    
+}
+.scrollingText{
+    overflow: hidden;
+}
+.ulScrolling{
+    padding: 0;
+}
+.ulScrolling li{
+    list-style-type: none;
+    margin-right: 1rem;
+    font-size: 5rem;
+}
+
+@keyframes scroll{
+    to{ transform: translateX(-100% )}
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .ulScrolling{
+        animation: scroll 6s linear infinite;
+    }
+}

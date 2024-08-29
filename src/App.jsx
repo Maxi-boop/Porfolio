@@ -81,7 +81,7 @@ export default function App(){
 
         <article className="aboutMe" style={{margin: "1rem"}}>
           <section className="basicInfo">
-            <h1 id="mainText-aboutMe">Hi <span id="emojiWavingAnimation">👋</span>! I'm Max a front-end developer</h1>
+            <h1 id="mainText-aboutMe">Hey <span id="emojiWavingAnimation">👋</span>! I'm Max a front-end developer</h1>
             <p id="mainText-description">
               I am a front-end developer specialized in React.js. I am frequently working with many CSS libraries and
               trying out preprocessors like SASS. Keep scrolling to learn more.
